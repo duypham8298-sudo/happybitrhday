@@ -26,7 +26,6 @@ body{
     display:flex; 
     justify-content:center; 
     align-items:center; 
-    flex-wrap: wrap; /* Tự động xuống dòng trên điện thoại */
     gap: 30px; /* Tăng khoảng cách giữa ảnh và bàn phím */
 }
 
