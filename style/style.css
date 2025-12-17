@@ -10,10 +10,14 @@ body{
 }
 
 #lockScreen{
-    width: fit-content;
+    width: 90% ;
+    max-width: 700px;
     text-align:center;
+    margin: auto;
+    height: auto;          /* Giữ đúng tỉ lệ ảnh */
+    aspect-ratio: 3/4;     /* Ép tỉ lệ ảnh đẹp */
     background:rgba(255,255,255,0.7);
-    padding:25px;
+    padding:20px;
     border-radius:20px;
     box-shadow:0 6px 30px rgba(0,0,0,0.1);              /* Tạo viền trắng cho sang trọng */
     /* Giữ nguyên các thuộc tính cũ */
