@@ -22,7 +22,7 @@ body{
     display:flex; 
     justify-content:center; 
     align-items:center; 
-    gap:30px; 
+    gap:15px; 
 }
 
 #lockScreen img{ 
