@@ -7,6 +7,11 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    display: flex; /* Bật Flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    min-height: 100vh; /* Đảm bảo body chiếm toàn bộ chiều cao màn hình */
+    margin: 0; /* Xóa margin mặc định của body */
 }
 
 #lockScreen{
@@ -241,4 +246,5 @@ body{
     line-height: 1.4;
     word-break: break-word;
     overflow: auto;
+
 }
