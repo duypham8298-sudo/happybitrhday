@@ -4,9 +4,9 @@ body{
     background: linear-gradient(135deg, #d4f4dd, #ffccd5);
     height:100vh;
     overflow:hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;           /* Kích hoạt Flexbox */
+    justify-content: center;  /* Căn giữa theo chiều ngang (Trái - Phải) */
+    align-items: center;      /* Căn giữa theo chiều dọc (Trên - Dưới) */
 }
 
 #lockScreen{
@@ -19,10 +19,10 @@ body{
 }
 
 .lock-container{ 
-    display:flex; 
-    justify-content:center; 
-    align-items:center; 
-    gap:20px; 
+    display: flex; 
+    justify-content: center; /* Đảm bảo ảnh và khối phải nằm giữa container */
+    align-items: center;     /* Đảm bảo ảnh và khối phải ngang hàng nhau theo trục dọc */
+    gap: 20px;               /* Khoảng cách giữa ảnh và bàn phím */
 }
 
 #lockScreen img{ 
@@ -88,8 +88,8 @@ body{
 
 #cardScene {
     display:none;
-    width:600px;
-    height:500px;
+    width:400px;
+    height:300px;
     background: linear-gradient(135deg, #f2e8d4, #e6d7bd); /* giấy xám nâu nhạt */
     border-radius:20px;
     box-shadow:0 8px 30px rgba(0,0,0,0.15);
@@ -97,6 +97,13 @@ body{
     text-align:center;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+    /* Để căn giữa khối này nếu nó không nằm trong Flex của body */
+    margin: 0 auto; 
+    
+    /* Đảm bảo nội dung bên trong nó (video, chữ) cũng vào giữa */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #cardScene video{
