@@ -10,12 +10,9 @@ body{
 }
 
 #lockScreen{
-    width: 90% ;
-    max-width: 700px;
+    width: 60% ;
     text-align:center;
     margin: auto;
-    height: auto;          /* Giữ đúng tỉ lệ ảnh */
-    aspect-ratio: 3/4;     /* Ép tỉ lệ ảnh đẹp */
     background:rgba(255,255,255,0.7);
     padding:20px;
     border-radius:20px;
