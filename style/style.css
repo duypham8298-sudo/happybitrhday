@@ -10,15 +10,12 @@ body{
 }
 
 #lockScreen{
+    width: fit-content;
     text-align:center;
     background:rgba(255,255,255,0.7);
     padding:25px;
     border-radius:20px;
-    box-shadow:0 6px 30px rgba(0,0,0,0.1);
-    width: 90%;                                /* Đảm bảo không quá rộng trên mobile */
-    max-width: 750px;                          /* Giới hạn độ rộng để không bị loãng */ 
-    backdrop-filter: blur(10px);               /* Hiệu ứng kính mờ hiện đại */
-    border: 3px solid #fff;                  /* Tạo viền trắng cho sang trọng */
+    box-shadow:0 6px 30px rgba(0,0,0,0.1);              /* Tạo viền trắng cho sang trọng */
     /* Giữ nguyên các thuộc tính cũ */
 }
 
