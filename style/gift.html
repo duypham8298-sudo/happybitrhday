@@ -104,7 +104,7 @@
 <body>
 
 <img id="start-btn" src="./MessBox.png" alt="Start Chat">
-<div id="warning-text">⚠️ Em đang có rất nhiều tin nhắn chưa đọc, Hãy xem kỹ và để ý món quà cuối cùng a dành tặng cho e nhé , NHẤN VÀO ĐI NÈ </div>
+<div id="warning-text">⚠️ Bạn đang có rất nhiều tin nhắn chưa đọc</div>
 <audio id="bg-music" src="./Nhac.mp3" preload="auto" loop></audio>
 <audio id="popbtn" src="./style/pop.mp3"></audio>
 
@@ -116,7 +116,7 @@
       warning.style.opacity = '0';
       warning.style.transform = 'translateX(-50%) translateY(-10px)';
       setTimeout(() => warning.remove(), 800);
-    }, 5000);
+    }, 2000);
   });
   
 
@@ -143,7 +143,7 @@
     const screenPadding = 20;
 
     let images = [];
-    for (let i = 1; i <= 42; i++) {
+    for (let i = 1; i <= 27; i++) {
       images.push(`./img/Anh (${i}).jpg`);
     }
     let remainingImages = [...images];
@@ -206,14 +206,14 @@
     for (let i = 0; i < floatingCount; i++) { setTimeout(createFloatingImage, i * 500); }
 
     const chatTexts = [
-      "Xin chào em yêu ❤️", "Anh nhớ em quá 🥰", "Chúc Cục Vợ Sinh Nhật Vui Vẻ 😘",
-      "Chúc em luôn xinh đẹp và vui vẻ 💝", "Phải luôn mạnh khỏe để có sức leo Tầng 4 nha",
+      "Xin chào em yêu ❤️", "Anh nhớ em quá 🥰", "Hôm nay em thế nào rồi? 😘",
+      "Chúc em luôn xinh đẹp và vui vẻ 💝", "Anh đang nghĩ về em đấy 💌",
       "Em ngủ ngon nha 😴💤", "Anh yêu em rất nhiều ❤️🔥",
       "Ai mà có em xinh thế này 💕", "Hôm nay em cười nhiều không? 😄",
       "Anh hứa sẽ làm em vui 😎", "Em là cả thế giới của anh 🌏❤️",
-      "Mỗi lần gặp xong là càng gây thương nhớ ", "Anh nhớ nụ cười của em 😍",
-      "Lên t4 liền đi- Món quà đang đợi e thỉnh đó ", "Lên Tầng 4 Gấp Gấp Gấp",
-      "Anh luôn muốn thấy em hạnh phúc 💖", "Gì khóc quài dạ","Cục vk ngủ ngon nha . Thương vợ 😘"
+      "Mãi mãi yêu em nhé 💞", "Anh nhớ nụ cười của em 😍",
+      "Người yêu à, anh đến ngay 😘", "Em có đang nghĩ đến anh không? 💌",
+      "Anh luôn muốn thấy em hạnh phúc 💖", "❤️💛💚🧡❤️‍🔥"
     ];
 
     const chatIcons = ["💬","😊","👍","🎉","🥰","🔥"];

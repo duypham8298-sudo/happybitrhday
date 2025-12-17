@@ -23,7 +23,7 @@ function startFalling() {
         level = Math.max(0, level - 3);
         fill.style.height = level + '%';
     }
-    }, 10000);
+    }, 100000);
 }
 
 function pumpHeart() {
@@ -57,7 +57,7 @@ fillBtn.addEventListener('click', () => {
     pumpHeart();
     createFloatingEmoji();
 
-    if (clickCount >= 5) {
+    if (clickCount >= 1) {
     clickCount = 0;
     if (level < 100) {
         level += 10;

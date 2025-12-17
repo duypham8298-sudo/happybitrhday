@@ -36,8 +36,6 @@ body {
     box-shadow: 0 6px 20px rgba(255, 100, 150, 0.4);
 }
 
-
-
 .heart.pump {
     transform: scale(1.1);
 }

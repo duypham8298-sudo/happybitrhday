@@ -23,19 +23,21 @@ function playGiftEffect(callback){
 }
 
 const messages=[
-  "Gửi Cô Gái của Anh❤️",
-  "Anh không biết con đường phía trước của chúng mình dài bao xa",
-  "Nhưng a muốn e biết rằng:",
-  "Mỗi ngày được đi cùng e là điều a trân quý vô cùng ",
-  "Tình cảm này là 1 món quà mà anh luôn sợ sẽ vô tình đánh rơi !",
-  "Anh không dám hứa mình là 1 người hoàn hảo và sẽ có lúc làm e buồn",
-  "Nhưng a hứa sẽ yêu e thương e 1 cách tử tế trọn vẹn hơn mỗi ngày",
+  "Gửi Cô Gái của Anh ❤️",
+  "Anh không biết con đường phía trước của mình dài bao xa",
+  "Nhưng Anh muốn e biết rằng",
+  "Mỗi ngày được đi cùng Em, Là điều a trân quý cô cùng ",
+  "Tình cảm này với A !",
+  "Là một món quà mà Anh luôn sợ sẽ vô tình đánh rơi !",
+  "Anh không dám hứa.,,Mình là 1 người hoàn hảo ",
+  "Và sẽ có lúc A vô tình làm E buồn !",
+  "Nhưng a hứa sẽ Yêu Em, Thương Em tử tế và trọn vẹn hơn từng ngày !!!",
+  "Nếu mệt mỏi hay phiền lòng hãy chia sẻ cùng a nhé",
   "Đừng bận lòng vì những cũ kỹ của quá khứ nữa",
-  "E đáng được Hạnh Phúc sau bấy nhiêu sự mệt mỏi đó",
-  "Anh xin lỗi",
-  "Xin lỗi em",
-  "Anh Đến Muộn",
-  "Nhấn Vào Hộp Quà Đi Nè !",
+  "E đáng được hạnh phúc sau bấy nhiêu mệt mỏi đó",
+  "A Xin lỗi E",
+  "Xin lỗi E",
+  "Anh Đến Muộn:(", 
 ];
 
 let msgIndex=0, charIndex=0;
