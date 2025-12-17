@@ -10,25 +10,32 @@ body{
 }
 
 #lockScreen{
-    width: auto;
     text-align:center;
     background:rgba(255,255,255,0.7);
     padding:25px;
     border-radius:20px;
     box-shadow:0 6px 30px rgba(0,0,0,0.1);
+    width: 90%;                                /* Đảm bảo không quá rộng trên mobile */
+    max-width: 750px;                          /* Giới hạn độ rộng để không bị loãng */ 
+    backdrop-filter: blur(10px);               /* Hiệu ứng kính mờ hiện đại */
+    border: 3px solid #fff;                  /* Tạo viền trắng cho sang trọng */
+    /* Giữ nguyên các thuộc tính cũ */
 }
 
 .lock-container{ 
     display:flex; 
     justify-content:center; 
     align-items:center; 
-    gap:15px; 
+    flex-wrap: wrap; /* Tự động xuống dòng trên điện thoại */
+    gap: 30px; /* Tăng khoảng cách giữa ảnh và bàn phím */
 }
 
 #lockScreen img{ 
-    width:300px; 
-    border-radius:15px; 
     object-fit:cover; 
+    width: 320px;
+    height: 400px;
+    border-radius: 25px; /* Bo góc mạnh hơn cho giống style Gen Z */
+    box-shadow: 10px 10px 0px #ffccd5; /* Hiệu ứng bóng đổ lệch màu tạo điểm nhấn */
 }
 
 .right-box{ 
