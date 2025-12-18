@@ -54,6 +54,7 @@
     50% { transform: translate(-50%, -50%) translateY(-10px); }
   }
 
+  
   #warning-text {
     position: absolute;
     bottom: 40px;
@@ -66,15 +67,35 @@
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     opacity: 0;
-    animation: fadeIn 1.5s ease forwards 0.5s;
+    animation: fadeIn 1.5s forwards 0.5s;
     z-index: 9;
   }
-
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(10px); }
+    10% { opacity: 1; transform: translateY(0); }  /* Hiện rõ sau ~1.2s */
+    90% { opacity: 1; transform: translateY(0); }  /* Giữ nguyên độ rõ đến giây thứ 10.8 */
+    100% { opacity: 0; transform: translateY(-5px); } /* Mờ dần và biến mất */
+}
   @keyframes fadeIn {
     from { opacity: 0; transform: translateX(-50%) translateY(10px); }
     to { opacity: 10; transform: translateX(-50%) translateY(0); }
   }
 
+/* Định nghĩa hiệu ứng xuất hiện lâu và biến mất */
+
+
+/* Đảm bảo hình ảnh nút bấm căn giữa */
+#start-btn {
+    display: block;
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#start-btn:active {
+    transform: scale(0.9);
+}  
   .random-img {
     position: absolute;
     opacity: 0;
@@ -84,10 +105,10 @@
 
   @keyframes float {
     0% { opacity: 0; transform: translateY(0px); }
-    10% { opacity: 1; }
+    20% { opacity: 1; }
     50% { transform: translateY(-20px); }
-    90% { opacity: 1; }
-    100% { opacity: 1; transform: translateY(0px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; transform: translateY(0px); }
   }
 
   .chat-bubble {
