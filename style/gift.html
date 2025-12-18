@@ -12,22 +12,39 @@
     position: relative;
     background: #ffe6ef;
     font-family: sans-serif;
+    /* Sử dụng dvh để Safari tự tính toán chiều cao thực tế khi có thanh địa chỉ */
+    height: 100vh; 
+    height: 100dvh; 
+    /* Bật Flexbox để căn giữa tuyệt đối */
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử theo hàng dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc của màn hình */
+    align-items: center;     /* Căn giữa theo chiều ngang của màn hình */
+    /* Xử lý vùng an toàn cho iPhone (tai thỏ/vạch đáy) */
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    overflow: hidden;
+    position: fixed; /* Ngăn chặn cuộn/bập bềnh trên iOS */
+    width: 100%;
+    
+    background: #ffe6ef;
+    font-family: sans-serif;
   }
 
   #start-btn {
     position: absolute;
-    top: 500px;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
     width: 150px;
     height: auto;
-    margin: 0 auto;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     z-index: 10;
     animation: floatBtn 2.5s ease-in-out infinite;
     transition: transform 0.3s ease;
+    max-height: 40dvh; /* Giới hạn chiều cao tối đa là 40% màn hình */
+    width: auto;       /* Tự động điều chỉnh chiều rộng theo tỷ lệ */
+    margin-bottom: 20px;
   }
 
   #start-btn:hover {
