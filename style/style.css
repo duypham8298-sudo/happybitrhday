@@ -121,7 +121,7 @@ body{
     color: #d81b60;
     margin-bottom:10px;
     animation: rainbowText 2s linear infinite;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
     text-shadow: 0 0 5px #fff;
 }
