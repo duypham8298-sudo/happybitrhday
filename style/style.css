@@ -3,8 +3,10 @@
 body{
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     background: linear-gradient(135deg, #d4f4dd, #ffccd5);
-    height:100vh;
+    height:100vh;/* Sử dụng dvh (dynamic viewport height) thay vì vh */
+    width: 100vw;
     overflow:hidden;
+    position: fixed; /* Ngăn tình trạng cuộn (bounce) trên Safari */
     display: flex; /* Bật Flexbox */
     justify-content: center; /* Căn giữa theo chiều ngang */
     align-items: center; /* Căn giữa theo chiều dọc */
@@ -15,9 +17,31 @@ body{
     margin: 0 auto;
     width: fit-content;
 }
+@media (orientation: landscape) {
+    #lockScreen {
+        max-width: 90vw; /* Chiếm tối đa 90% chiều rộng màn hình */
+        max-height: 85vh; /* Giới hạn chiều cao để không bị thanh Safari che */
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .lock-container {
+        flex-direction: row; /* Ép buộc nằm ngang */
+        gap: 40px; /* Tạo khoảng cách rộng giữa ảnh và phím */
+        width: 100%;
+    }
+
+    #lockScreen img {
+        width: auto; 
+        height: 60vh; /* Ảnh co dãn theo chiều dọc màn hình */
+        max-height: 250px; /* Giới hạn để không quá lớn */
+        object-fit: cover;
+    }
+}
 #lockScreen{
     width: fit-content;
-    text-align:center;
+    text-align:center;  
     background:rgba(255,255,255,0.7);
     padding:25px;
     border-radius:20px;
@@ -33,8 +57,8 @@ body{
 
 #lockScreen img{ 
     object-fit:cover; 
-    width: 320px;
-    height: 400px;
+    width: 300px;
+    height: 380px;
     border-radius: 25px; /* Bo góc mạnh hơn cho giống style Gen Z */
     box-shadow: 10px 10px 0px #ffccd5; /* Hiệu ứng bóng đổ lệch màu tạo điểm nhấn */
 }
