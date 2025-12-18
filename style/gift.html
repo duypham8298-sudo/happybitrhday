@@ -180,7 +180,7 @@
     const screenPadding = 20;
 
     let images = [];
-    for (let i = 1; i <= 27; i++) {
+    for (let i = 1; i <=45; i++) {
       images.push(`./img/Anh (${i}).jpg`);
     }
     let remainingImages = [...images];
@@ -191,7 +191,7 @@
     const occupied = Array(rows).fill(0).map(() => Array(cols).fill(false));
 
     function random(min, max) { return Math.random() * (max - min) + min; }
-
+ 
     function getRandomCell() {
       const emptyCells = [];
       for (let r = 0; r < rows; r++) {
@@ -240,17 +240,19 @@
         createFloatingImage();
       }, duration * 1000);
     }
-    for (let i = 0; i < floatingCount; i++) { setTimeout(createFloatingImage, i * 500); }
+    for (let i = 0; i < floatingCount; i++) { setTimeout(createFloatingImage, i *200); }
 
     const chatTexts = [
       "Xin chào em yêu ❤️", "Anh nhớ em quá 🥰", "Chúc Cục Vợ Sinh Nhật Vui Vẻ 😘",
       "Chúc em luôn xinh đẹp và vui vẻ 💝", "Phải luôn mạnh khỏe để có sức leo Tầng 4 nha",
-      "Em ngủ ngon nha 😴💤", "Anh yêu em rất nhiều ❤️🔥",
+      "Em là cả thế giới của anh 🌏❤️", "Nhớ Lấy Quà Nha",
       "Ai mà có em xinh thế này 💕", "Hôm nay em cười nhiều không? 😄",
-      "Anh hứa sẽ làm em vui 😎", "Em là cả thế giới của anh 🌏❤️",
+      "Anh hứa sẽ làm em vui 😎", "Nhớ Lấy Quà Nha",
       "Mỗi lần gặp xong là càng gây thương nhớ ", "Anh nhớ nụ cười của em 😍",
       "Lên t4 liền đi- Món quà đang đợi e thỉnh đó ", "Lên Tầng 4 Gấp Gấp Gấp",
-      "Anh luôn muốn thấy em hạnh phúc 💖", "Gì khóc quài dạ","Cục vk ngủ ngon nha . Thương vợ 😘"
+      "Anh luôn muốn thấy em hạnh phúc 💖", "Gì khóc quài dạ","Lên t4 liền đi- Món quà đang đợi e thỉnh đó",
+      "Lên Tầng 4 Gấp Gấp Gấp","Mở Cửa Vào Đi!!!","Mở Cửa Vào Đi!!!","Phải luôn mạnh khỏe để có sức leo Tầng 4 nha",
+      "Lên t4 liền đi- Món quà đang đợi e thỉnh đó ", "Lên Tầng 4 Gấp Gấp Gấp","Thương Em🥰","Thương Em🥰","Yêu Em❤️",
     ];
 
     const chatIcons = ["💬","😊","👍","🎉","🥰","🔥"];
