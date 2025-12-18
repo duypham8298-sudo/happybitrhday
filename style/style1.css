@@ -6,14 +6,19 @@ body {
     height: 100vh;
     background: #ffe6ef;
     font-family: "Poppins", sans-serif;
+    height: 100dvh; /* Quan trọng cho Safari */
+    width: 100vw;
+    margin: 0;
+    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom) 0; /* Tránh Dynamic Island */
     overflow: hidden;
+    position: fixed; /* Ngăn chặn tình trạng cuộn bounce trên Safari */
 }
 
 .heart-container {
     position: relative;
-    width: 200px;
-    height: 220px;
-    margin-bottom: 30px;
+    width: 222px;
+    height: 240px;
+    margin-bottom: 40px;
 }
 
 .heart {
