@@ -31,20 +31,18 @@
   }
 
   #start-btn {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+    margin: 0;
+    height: 100dvh; /* Dùng dvh thay vì vh để khớp với Safari iPhone */
+    display: flex;
+    flex-direction: column; /* Xếp các thành phần theo hàng dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center;    /* Căn giữa theo chiều ngang */
+    overflow: hidden;
     width: 150px;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    z-index: 10;
-    animation: floatBtn 2.5s ease-in-out infinite;
-    transition: transform 0.3s ease;
-    max-height: 40dvh; /* Giới hạn chiều cao tối đa là 40% màn hình */
-    width: auto;       /* Tự động điều chỉnh chiều rộng theo tỷ lệ */
-    margin-bottom: 20px;
+    background: #ffe6ef;
+    font-family: sans-serif;
+
   }
 
   #start-btn:hover {
